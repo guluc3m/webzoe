@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!--META-->
     <meta charset="UTF-8"/>
     <meta property="og:title" content="Zoe, el asistente virtual del GUL-UC3M"/>
     <meta property="og:locale" content="es_ES"/>
 
+    <!--STYLES-->
     <link rel="stylesheet" href="static/style/styles.css"/>
     <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
+    <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
 
+    <!--SCRIPTS-->
     <script type="text/javascript" src="static/js/script.js" defer></script>
   </head>
 
   <body>
+    <!--NAV SECTION-->
+    <header id="nav-section">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      >
+        <div class="container-fluid m-3 mt-0 mb-0">
+          <a class="navbar-brand" href="#main-section" aria-current="page">
+            <img
+              class="logo-nav"
+              src="static/images/logo_horizontal_gray.svg"
+              alt="Logo GUL Image"/>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-container-icon">
+              <li class="nav-item">
+                <a class="nav-link active" target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
+                  <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
+                  <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/>
+                </a>
+              </li>
+              <!-- No ze zi ezto ze uza ya o ke
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://cursos.gul.es" title="Enlace a cursos.gul.es">
+                  <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
+                </a>
+              </li>
+              -->
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://jamon.gul.es" title="Enlace a jamon.gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/ham.svg" alt="Ham icon"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://radio.gul.es" title="Enlace a radio.gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/radio.svg" alt="Radio icon"/>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-container-text">
+              <li class="nav-item">
+                <a class="nav-link" href="#main-section">
+                  Qué es ZoE
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#core-section">
+                  Core
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#agentes-section">
+                  Agentes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='#primeros-pasos-section'>
+                  Primeros pasos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN SECTION-->
     <main>
-      <section id=description>
+      <section id=main-section>
         <!--img?(logo)-->
         <div class="text-container">
           <div class="text-title">
-            <h3>¿Qué es Zoe?</h3>
+            <h3>¿Qué es ZoE?</h3>
           </div>
           <div class="text-descr">
             <p>
@@ -30,7 +116,8 @@
         </div>
       </section>
 
-      <section id="core">
+      <!--CORE SECTION-->
+      <section id="core-section">
         <div class="text-container">
           <div class="text-title">
             <h3>Core</h3>
@@ -42,22 +129,9 @@
           </div>
         </div>
       </section>
-
-      <section id="docker">
-        <div class="text-container">
-          <div class="text-title">
-            <h3>Docker</h3>
-          </div>
-          <div class="text-descr">
-            <p>
-              Cómo desplegar. Primeros pasos.
-            </p>
-          </div>
-        </div>
-        <!--tarjetita-->
-      </section>
-
-      <section id="agentes">
+      
+      <!--AGENTES SECTION-->
+      <section id="agentes-section">
         <div class="text-container">
           <div class="text-title">
             <h3>Agentes</h3>
@@ -69,6 +143,21 @@
           </div>
         </div>
         <!--tarjetitas-->
+      </section>
+
+      <!--PRIMEROS PASOS SECTION-->
+      <section id="primeros-pasos-section">
+        <div class="text-container">
+          <div class="text-title">
+            <h3>Primeros pasos</h3>
+          </div>
+          <div class="text-descr">
+            <p>
+              Primeros pasos. Docker.
+            </p>
+          </div>
+        </div>
+        <!--tarjetita-->
       </section>
 
     </main>
