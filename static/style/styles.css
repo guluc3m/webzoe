@@ -3,8 +3,7 @@ html {
     }
   * {
     box-sizing: border-box;
-  }                                                                                                          g
-  
+  }                                                                                                            
   .no-style {
     text-decoration: inherit;
   }
@@ -55,8 +54,29 @@ html {
   }
   /* <<<<<<  NAV SECTION END >>>>>> */
 
+  .text-centered-office {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px 5px #000;
+    z-index: 5 !important;
+    background-color: rgba(54, 54, 54, 0.616);
+  }
+
+
   /* ======  MEDIA QUERY SECTION START ====== */
   @media screen and (max-width: 992px) {
+    .text-container {
+      width: 80%;
+    }
+    .top-col object{
+      width: 300px;
+    }
+
     .nav-container-icon {
       flex-direction: row !important;
       justify-content: space-evenly;
@@ -73,8 +93,34 @@ html {
       padding-right: 10px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .top-col{
+      margin-right: 0px;
+    }
+    .top-col object{
+      width: 250px;
+    }
+    .top-col object:hover{
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
   @media screen and (max-width: 576px) {
     .text-centered-office {
       font-size: 1.3rem;
+    }
+    .text-container {
+      width: 90%;
+    }
+    .top-cards{
+      margin-top: 0px;
+    }
+    .top-row{
+      flex-direction: column;
+    }
+    .top-col object{
+      width: 90%;
     }
   }
