@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!--META-->
-    <meta charset="UTF-8"/>
-    <meta property="og:title" content="Zoe, el asistente virtual del GUL-UC3M"/>
-    <meta property="og:locale" content="es_ES"/>
 
-    <!--STYLES-->
-    <link rel="stylesheet" href="static/style/styles.css"/>
-    <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
+    <title>ZoE | Inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== CSP ====== -->
+    <!--
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://zoe.gul.es; img-src 'self' data:; object-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; font-src 'self'">
+    -->
+      <!-- ====== SEO ====== -->
+    <meta name="description" content="ZoE, el asistente virtual de GUL UC3M"">
+    <meta property="og:title" content="ZoE GUL UC3M" />
+    <meta property="og:url" content="https://zoe.gul.es/" />
+    <meta property="og:image" content="static/images/zoe_logo_horizontal.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="ZoE, el asistente virtual de GUL UC3M"/>
+    <meta property="og:locale" content="es_ES" />
+    <!-- ====== FAVICON ====== -->
+    <link rel="icon" href="static/images/favicon.png"/>    
     <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
-
-    <!--SCRIPTS-->
+    <link rel="stylesheet" href="static/style/styles.css"/>
+    <!-- ====== FONTS ====== -->
+    <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
+    <script type="text/javascript" src="static/js/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="static/style/bootstrap/js/bootstrap.min.js" defer></script>
     <script type="text/javascript" src="static/js/script.js" defer></script>
+
   </head>
 
   <body>
-    <!--NAV SECTION-->
+    <!-- ====== NAV SECTION ====== -->
     <header id="nav-section">
       <nav
         id="navbar"
         class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
       >
         <div class="container-fluid m-3 mt-0 mb-0">
-          <a class="navbar-brand" target="_blank" href="https://gul.es" aria-current="false">
+          <a class="navbar-brand" target="_blank" href="#main-section" aria-current="page">
             <img
               class="logo-nav"
-              src="static/images/logo_horizontal_gray.svg"
-              alt="Logo GUL Image"/>
+              src="static/images/zoe_logo_horizontal.svg"
+              alt="Logo ZoE Image"/>
           </a>
           <button
             class="navbar-toggler"
@@ -40,7 +54,8 @@
           >
           <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav nav-container-icon">
               <li class="nav-item">
                 <a class="nav-link active" target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
@@ -52,13 +67,11 @@
                   <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/>
                 </a>
               </li>
-              <!-- No ze zi ezto ze uza ya o ke
               <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://cursos.gul.es" title="Enlace a cursos.gul.es">
                   <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
                 </a>
               </li>
-              -->
               <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://jamon.gul.es" title="Enlace a jamon.gul.es" aria-disabled="true">
                   <img class="image-nav" src="static/images/icon/ham.svg" alt="Ham icon"/>
@@ -69,7 +82,13 @@
                   <img class="image-nav" src="static/images/icon/radio.svg" alt="Radio icon"/>
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://gul.es" title="Enlace a gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/gul.svg" alt="gul.es icon"/>
+                </a>
+              </li>
             </ul>
+
             <ul class="navbar-nav nav-container-text">
               <li class="nav-item">
                 <a class="nav-link" href="#main-section">
@@ -77,13 +96,8 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#core-section">
-                  Core
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#agentes-section">
-                  Agentes
+                <a class="nav-link" href="#core-agents-section">
+                  Core y Agentes
                 </a>
               </li>
               <li class="nav-item">
@@ -97,67 +111,83 @@
       </nav>
     </header>
 
-    <!--MAIN SECTION-->
+    <!-- ====== MAIN SECTION ====== -->
     <main>
       <section id=main-section>
-        <!--img?(logo)-->
-        <div class="text-container">
-          <div class="text-title">
-            <h3>¿Qué es ZoE?</h3>
+        <div class="container-fluid image-main-section"></div>
+          <div class="text-centered-office">
+            <div id="main-title" class="title-text-centered">
+              <h1 class="mb-3">¿Qué es ZoE?</h1>
+              <p id=main-text>
+                <b>ZoE</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
+                Grupo de Usuarios Linux</a> de la Universidad Carlos III de Madrid. <br>
+                Consta de un "core", que es capaz de reconocer comandos a través de lenguaje natural, y 
+                "agentes", módulos extras que ejecutan los distintos comandos, y son personalizables y creables.
+              </p>
+            </div>
+            <div id=main-video>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns?start=665" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
-          <div class="text-descr">
-            <p>
-              <b>Zoe</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
-              Grupo de Usuarios Linux</a> de la Universidad Carlos III de Madrid. Consta de un "core", 
-              que es capaz de reconocer comandos a través de lenguaje natural, y "agentes", módulos extras 
-              que ejecutan los distintos comandos, y son personalizables y creables.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--CORE SECTION-->
-      <section id="core-section">
-        <div class="text-container">
-          <div class="text-title">
-            <h3>Core</h3>
-          </div>
-          <div class="text-descr">
-            <p>
-              Cómo funciona? etc.
-            </p>
-          </div>
+            
         </div>
       </section>
       
-      <!--AGENTES SECTION-->
-      <section id="agentes-section">
-        <div class="text-container">
-          <div class="text-title">
-            <h3>Agentes</h3>
+      <section id=body>
+      <!-- ====== CORE-AGENTS SECTION ====== -->
+        <section id="core-agents-section">
+          <div class="title-text-centered"><h1>Core y Agentes</h1></div>
+          <div class="row justify-content-center m-0 col-12 p-0">
+            <div id="dev-random" class="program col-lg-5 col-sm-12">
+              <div class="text-title text-center p-3">
+                <h3>Core</h3>
+              </div>
+              <div class="text-desc border border-dark">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+                  </p>
+              </div>
+            </div>
+
+            <div id="betapod" class="program col-lg-5 col-sm-12 mt-sm-4 mt-lg-0">
+              <div class="text-title text-center p-3">
+                <h3>Agentes</h3>
+              </div>
+              <div class="text-desc border border-dark">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+                  </p>
+              </div>
+            </div>
           </div>
-          <div class="text-descr">
-            <p>
-              Qué son y cómo crear
-            </p>
+
+          <!--tarjetitas-->
+        </section>
+      
+
+        <!-- ====== PRIMEROS PASOS SECTION ====== -->
+        <section id="primeros-pasos-section">
+          <div id="core-agents-title" class="title-text-centered"><h1>Primeros Pasos</h1></div>
+            <div class="text-descr text-center">
+              <p>
+                Primeros pasos. Docker.
+              </p>
+            </div>
           </div>
-        </div>
-        <!--tarjetitas-->
+          <!--tarjetita-->
+        </section>
       </section>
 
-      <!--PRIMEROS PASOS SECTION-->
-      <section id="primeros-pasos-section">
-        <div class="text-container">
-          <div class="text-title">
-            <h3>Primeros pasos</h3>
-          </div>
-          <div class="text-descr">
-            <p>
-              Primeros pasos. Docker.
-            </p>
-          </div>
+      <section id="legal-section" class="border-top border-dark">
+        <div class="text-desc text-center">
+          <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</p>
+          <p>Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.</p>
+          <p>
+          C.I.F.: G83296988<br>
+          Número de registro de la comunidad de Madrid: 23500<br>
+          Número de registro del ayuntamiento de Leganés: 795
+          </p>
         </div>
-        <!--tarjetita-->
       </section>
 
     </main>
