@@ -5,12 +5,8 @@
     <title>ZoE | Inicio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ====== CSP ====== -->
-    <!--
-      <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://zoe.gul.es; img-src 'self' data:; object-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; font-src 'self'">
-    -->
       <!-- ====== SEO ====== -->
-    <meta name="description" content="ZoE, el asistente virtual de GUL UC3M"">
+    <meta name="description" content="ZoE, el asistente virtual de GUL UC3M">
     <meta property="og:title" content="ZoE GUL UC3M" />
     <meta property="og:url" content="https://zoe.gul.es/" />
     <meta property="og:image" content="static/images/zoe_logo_horizontal.png" />
@@ -32,29 +28,15 @@
   <body>
     <!-- ====== NAV SECTION ====== -->
     <header id="nav-section">
-      <nav
-        id="navbar"
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-      >
-        <div class="container-fluid m-3 mt-0 mb-0">
-          <a class="navbar-brand" target="_blank" href="#main-section" aria-current="page">
-            <img
-              class="logo-nav"
-              src="static/images/zoe_logo_horizontal.svg"
-              alt="Logo ZoE Image"/>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="row col-12 p-0 m-0 justify-content-between">
+          <a class="navbar-brand" href="#main-section" aria-current="page">
+            <img class="logo-nav" src="static/images/zoe_logo_horizontal.svg" alt="Logo ZoE Image"/>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-          <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav nav-container-icon">
               <li class="nav-item">
@@ -101,7 +83,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='#primeros-pasos-section'>
+                <a class="nav-link" href="#primeros-pasos-section">
                   Primeros pasos
                 </a>
               </li>
@@ -113,32 +95,35 @@
 
     <!-- ====== MAIN SECTION ====== -->
     <main>
-      <section id=main-section>
+      <section id="main-section">
         <div class="container-fluid image-main-section"></div>
           <div class="text-centered-office">
-            <div id="main-title" class="title-text-centered">
+            <div id="main-title" class="p-3">
               <h1 class="mb-3">¿Qué es ZoE?</h1>
-              <p id=main-text>
+              <p id="main-text">
                 <b>ZoE</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
                 Grupo de Usuarios Linux</a> de la Universidad Carlos III de Madrid. <br>
                 Consta de un "core", que es capaz de reconocer comandos a través de lenguaje natural, y 
                 "agentes", módulos extras que ejecutan los distintos comandos, y son personalizables y creables.
               </p>
             </div>
-            <div id=main-video>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns?start=665" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="main-video" class="p-3">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns?start=665" 
+                  title="Charla de David sobre Zoe" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
             
         </div>
       </section>
       
-      <section id=body>
+      <section id="body">
       <!-- ====== CORE-AGENTS SECTION ====== -->
         <section id="core-agents-section">
-          <div class="title-text-centered"><h1>Core y Agentes</h1></div>
+          <div class="text-center text-white p-3">
+            <h1>Core y Agentes</h1>
+          </div>
           <div class="row justify-content-center m-0 col-12 p-0">
-            <div id="dev-random" class="program col-lg-5 col-sm-12">
+            <div id="core" class="program col-lg-5 col-sm-12">
               <div class="text-title text-center p-3">
                 <h3>Core</h3>
               </div>
@@ -149,7 +134,7 @@
               </div>
             </div>
 
-            <div id="betapod" class="program col-lg-5 col-sm-12 mt-sm-4 mt-lg-0">
+            <div id="agentes" class="program col-lg-5 col-sm-12 mt-sm-4 mt-lg-0">
               <div class="text-title text-center p-3">
                 <h3>Agentes</h3>
               </div>
@@ -167,8 +152,10 @@
 
         <!-- ====== PRIMEROS PASOS SECTION ====== -->
         <section id="primeros-pasos-section">
-          <div id="core-agents-title" class="title-text-centered"><h1>Primeros Pasos</h1></div>
-            <div class="text-descr text-center">
+          <div id="core-agents-title" class="text-center text-white p-3">
+            <h1>Primeros Pasos</h1>
+          </div>
+            <div class="text-desc text-center">
               <p>
                 Primeros pasos. Docker.
               </p>
@@ -183,9 +170,9 @@
           <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</p>
           <p>Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.</p>
           <p>
-          C.I.F.: G83296988<br>
-          Número de registro de la comunidad de Madrid: 23500<br>
-          Número de registro del ayuntamiento de Leganés: 795
+            C.I.F.: G83296988<br>
+            Número de registro de la comunidad de Madrid: 23500<br>
+            Número de registro del ayuntamiento de Leganés: 795
           </p>
         </div>
       </section>
