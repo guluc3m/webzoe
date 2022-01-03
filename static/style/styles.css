@@ -117,6 +117,20 @@ html {
   background-color: #ffffff;
 }
 
+.tarjeta object{
+  padding: 0.5rem;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+.tarjeta object:hover {
+  box-shadow: -10px -10px rgb(57, 160, 26);
+  transform: translate(10px,10px);
+}
+.tarjeta {
+  text-align: center;
+  width: fit-content;
+}
+
 /* <<<<<<  CORE-AGENTS SECTION END >>>>>> */
 
 /* ======  PRIMEROS-PASOS SECTION START ====== */
@@ -146,11 +160,81 @@ html {
     border-top: 1px solid #d7d8d8;
   }
   .nav-container-text > .nav-item {
-    text-align: center;
+    transition: ease 0.5s;
+    border-radius: 10px;
+    margin-right: 10px;
   }
   .nav-container-icon > .nav-item {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .nav-link {
+    color: black !important;
+  }
+  .nav-link:hover {
+    cursor: pointer;
+  }
+  .nav-container-text > .nav-item:hover {
+    background-color: #d7d8d8;
+    transform: scale(1.1);
+  }
+  /* <<<<<<  NAV SECTION END >>>>>> */
+
+
+  /* ======  MAIN SECTION START ====== */
+
+  #main-section .image-main-section {
+    position: relative;
+    background-image: url("../images/background/office.avif"); /* Cambiarla más tarde*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 4;
+    filter: blur(2px);
+    height: 100vh;
+    width: auto;  
+  }
+
+  #main-section a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .text-centered-office {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px 5px #000;
+    z-index: 5 !important;
+    background-color: rgba(54, 54, 54, 0.616);
+  }
+
+  #main-title {
+    position: relative;
+    top: 15%;
+  }
+
+  #main-text {
+    position: relative;
+    top: 15%;
+    margin: auto;
+    max-width: 60%;
+
+    font-size: 0.6em;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  #main-video {
+    position: relative;
+    margin: auto;
+    top: 15%;
+    text-align: center;
+    padding: 1rem;
   }
 }
 
@@ -158,8 +242,13 @@ html {
   .top-col{
     margin-right: 0px;
   }
-  .top-col object{
-    width: 250px;
+  /* <<<<<<  MAIN SECTION END >>>>>> */
+
+  #body {
+    background-image: url("../images/background/gul_logo.svg");
+    background-color: #1c3144;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .top-col object:hover{
     transform: none;
@@ -174,13 +263,50 @@ html {
   .text-container {
     width: 90%;
   }
-  .top-cards{
-    margin-top: 0px;
+
+}
+  
+
+  /* <<<<<<  CORE-AGENTS SECTION END >>>>>> */
+
+  /* ======  PRIMEROS-PASOS SECTION START ====== */
+
+  #primeros-pasos-section {
+    padding: 1rem;
   }
-  .top-row{
-    flex-direction: column;
+
+  #primeros-pasos-section .text-desc {
+    width: 70%;
+  }
+
+  /* <<<<<<  PRIMEROS-PASOS SECTION END >>>>>> */
+
+
+  /* ======  MEDIA QUERY SECTION START ====== */
+  @media screen and (max-width: 992px) {
+    .text-container {
+      width: 80%;
+    }
+    .top-col object{
+      width: 300px;
+    }
+
+    .nav-container-icon {
+      flex-direction: row !important;
+      justify-content: space-evenly;
+      padding-bottom: 10px;
+    }
+    .nav-container-text {
+      border-top: 1px solid #d7d8d8;
+    }
+    .nav-container-text > .nav-item {
+      text-align: center;
+    }
+    .nav-container-icon > .nav-item {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   .top-col object{
     width: 90%;
   }
-}

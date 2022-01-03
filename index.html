@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
 
-    <title>ZoE | Inicio</title>
+    <title>ZoE</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- ====== SEO ====== -->
@@ -19,19 +19,29 @@
     <link rel="stylesheet" href="static/style/styles.css"/>
     <!-- ====== FONTS ====== -->
     <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
-    <script type="text/javascript" src="static/js/jquery-3.6.0.min.js" defer></script>
     <script type="text/javascript" src="static/style/bootstrap/js/bootstrap.min.js" defer></script>
-    <script type="text/javascript" src="static/js/script.js" defer></script>
+    <!--
+      <script type="text/javascript" src="static/js/script.js" defer></script>
+    -->
 
   </head>
 
   <body>
+
     <!-- ====== NAV SECTION ====== -->
     <header id="nav-section">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="row col-12 p-0 m-0 justify-content-between">
-          <a class="navbar-brand" href="#main-section" aria-current="page">
-            <img class="logo-nav" src="static/images/zoe_logo_horizontal.svg" alt="Logo ZoE Image"/>
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      >
+        <div class="container-fluid m-3 mt-0 mb-0">
+          <a class="navbar-brand" target="_blank" href="#main-section" aria-current="page">
+            <!-- debería ser .svg, pero rl degradado no funciona -->
+            <img
+              class="logo-nav"
+              src="static/images/zoe_logo_horizontal.png" 
+              alt="Logo ZoE Image"
+            >
           </a>
           <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,16 +110,25 @@
           <div class="text-centered-office">
             <div id="main-title" class="p-3">
               <h1 class="mb-3">¿Qué es ZoE?</h1>
-              <p id="main-text">
-                <b>ZoE</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
-                Grupo de Usuarios Linux</a> de la Universidad Carlos III de Madrid. <br>
-                Consta de un "core", que es capaz de reconocer comandos a través de lenguaje natural, y 
-                "agentes", módulos extras que ejecutan los distintos comandos, y son personalizables y creables.
-              </p>
+              <div id="main-text">
+                <p>
+                  <b>ZoE</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
+                  Grupo de Usuarios Linux</a> de la <a href="https://www.uc3m.es/" target="_blank">Universidad Carlos III de Madrid</a>.
+                </p>
+                <p>
+                  El principal objetivo de ZoE es hacer <b>tareas tediosas y/o repetitivas</b> (memorias de asociación,
+                  actualizar servidores, etc.), que normalmente tendría que hacer el usuario. También es infinitamente
+                  mejorable, ya que estas "tareas" pueden ser creadas por cualquier usuario libremente, en <b>cualquier lenguaje</b>,
+                  para que sean reconocidas y ejecutadas cuando sea necesario.
+                </p>
+                <p>
+                  ZoE consta de un "<b>core</b>", el cual procesa las instrucciones recibidas y las distribuye a los distintos 
+                  "<b>agentes</b>", módulos especializados que ejecutan las distintas funcionalidades.
+                </p>
+              </div>
             </div>
-            <div id="main-video" class="p-3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns?start=665" 
-                  title="Charla de David sobre Zoe" frameborder="0" allowfullscreen></iframe>
+            <div id="main-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
             
@@ -128,9 +147,15 @@
                 <h3>Core</h3>
               </div>
               <div class="text-desc border border-dark">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+                </p>
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-python.svg?fullname=&link_target=_blank"></object>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-java.svg?fullname=&link_target=_blank"></object>
+                </div>
               </div>
             </div>
 
@@ -139,36 +164,58 @@
                 <h3>Agentes</h3>
               </div>
               <div class="text-desc border border-dark">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+                </p>
+                <!--
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-user.svg?fullname=&link_target=_blank"></object>
+                </div>
+                -->
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-shell.svg?fullname=&link_target=_blank"></object>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-msglog.svg?fullname=&link_target=_blank"></object>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-mail.svg?fullname=&link_target=_blank"></object>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                  <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-vidmaster.svg?fullname=&link_target=_blank"></object>
+                </div>
               </div>
             </div>
           </div>
-
-          <!--tarjetitas-->
         </section>
       
 
         <!-- ====== PRIMEROS PASOS SECTION ====== -->
         <section id="primeros-pasos-section">
-          <div id="core-agents-title" class="text-center text-white p-3">
-            <h1>Primeros Pasos</h1>
-          </div>
-            <div class="text-desc text-center">
+          <div id="primeros-pasos-title" class="title-text-centered"><h1>Primeros Pasos</h1></div>
+            <div class="container text-desc text-center border border-dark">
               <p>
-                Primeros pasos. Docker.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
               </p>
             </div>
           </div>
-          <!--tarjetita-->
+          <div id="docker-title" class="title-text-centered"><h1>Docker</h1></div>
+            <div class="container text-desc text-center border border-dark">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+              </p>
+              <div class="d-flex flex-column justify-content-center align-items-center tarjeta">
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-docker.svg?fullname=&link_target=_blank"></object>
+              </div>
+            </div>
+          </div>
         </section>
       </section>
 
       <section id="legal-section" class="border-top border-dark">
-        <div class="text-desc text-center">
+        <div class="text-desc text-center pt-5">
           <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</p>
-          <p>Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.</p>
+          <p>Domicilio social: Despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30, 28911 Leganés Madrid, España.</p>
           <p>
             C.I.F.: G83296988<br>
             Número de registro de la comunidad de Madrid: 23500<br>
