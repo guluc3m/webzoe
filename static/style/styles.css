@@ -181,9 +181,23 @@ html {
   .text-container {
     width: 80%;
   }
-
   .top-col object{
     width: 90%;
+  }
+  .nav-container-icon {
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .nav-container-text {
+    border-top: 1px solid #d7d8d8;
+  }
+  .nav-container-text > .nav-item {
+    text-align: center;
+  }
+  .nav-container-icon > .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
