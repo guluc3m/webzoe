@@ -25,6 +25,7 @@ html {
 }
 
 .nav-container-icon {
+  flex-wrap: wrap;
   flex-direction: row !important;
   justify-content: space-evenly;
   padding-bottom: 10px;
@@ -182,18 +183,8 @@ html {
     width: 80%;
   }
 
-  .top-col object{
-    width: 90%;
-  }
-
-  .nav-container-icon {
-    flex-direction: row !important;
-    justify-content: space-evenly;
-    padding-bottom: 10px;
-  }
-  .nav-container-icon > .nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
+  .tarjeta object{
+    max-width: 90%;
   }
 
   .nav-container-text {
@@ -204,20 +195,19 @@ html {
   }
 }
 @media screen and (max-width: 875px) {
+  #main-title {
+    top: 20%;
+  }
   .text-centered-office {
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
   }
   
-  .top-col{
-    margin-right: 0px;
-  }
-  .top-col object:hover{
+  .tarjeta object:hover{
     transform: none;
     box-shadow: none;
   }
 
   .tarjeta object{
-    transform: scale(70%);
     padding: 0.1rem;
     text-align: inherit;
   }
