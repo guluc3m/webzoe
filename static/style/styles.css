@@ -88,12 +88,12 @@ html {
 
 #main-title {
   position: relative;
-  top: 15%;
+  top: 30%;
 }
 
 #main-text {
   position: relative;
-  top: 15%;
+  top: 30%;
   margin: auto;
   max-width: 60%;
 
@@ -181,27 +181,33 @@ html {
   .text-container {
     width: 80%;
   }
+
   .top-col object{
     width: 90%;
   }
+
   .nav-container-icon {
     flex-direction: row !important;
     justify-content: space-evenly;
     padding-bottom: 10px;
   }
+  .nav-container-icon > .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .nav-container-text {
     border-top: 1px solid #d7d8d8;
   }
   .nav-container-text > .nav-item {
     text-align: center;
   }
-  .nav-container-icon > .nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 875px) {
+  .text-centered-office {
+    font-size: 1.7rem;
+  }
+  
   .top-col{
     margin-right: 0px;
   }
@@ -209,10 +215,21 @@ html {
     transform: none;
     box-shadow: none;
   }
+
   .tarjeta object{
     transform: scale(70%);
     padding: 0.1rem;
     text-align: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-centered-office {
+    font-size: 1.3rem;
+  }
+
+  #main-text{
+    max-width: 80%;
   }
 }
 
@@ -224,6 +241,8 @@ html {
   .text-container {
     width: 90%;
   }
+
+  
 
 }
 
