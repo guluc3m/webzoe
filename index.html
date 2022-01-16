@@ -113,24 +113,14 @@
               <h1 class="mb-3">¿Qué es ZoE?</h1>
               <div id="main-text">
                 <p>
-                  <b>ZoE</b> es un asistente virtual creado por el <a href="https://www.gul.es" target="_blank">
-                  Grupo de Usuarios Linux</a> de la <a href="https://www.uc3m.es/" target="_blank">Universidad Carlos III de Madrid</a>.
-                </p>
-                <p>
-                  El principal objetivo de ZoE es hacer <b>tareas tediosas y/o repetitivas</b> (memorias de asociación,
-                  actualizar servidores, etc.), que normalmente tendría que hacer el usuario. También es infinitamente
-                  mejorable, ya que estas "tareas" pueden ser creadas por cualquier usuario libremente, en <b>cualquier lenguaje</b>,
-                  para que sean reconocidas y ejecutadas cuando sea necesario.
-                </p>
-                <p>
-                  ZoE consta de un "<b>core</b>", el cual procesa las instrucciones recibidas y las distribuye a los distintos 
-                  "<b>agentes</b>", módulos especializados que ejecutan las distintas funcionalidades.
+                  <b>ZoE</b> es el asistente virtual creado por el <b><a href="https://www.gul.es" target="_blank">
+                  Grupo de Usuarios Linux de la Universidad Carlos III de Madrid</a></b>.
                 </p>
               </div>
+              <div id="main-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </div>
-            <!--<div id="main-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/3ApdZpXHGns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>-->
           </div>
             
         </div>
@@ -138,12 +128,55 @@
       
       <section id="body">
       <!-- ====== CORE-AGENTS SECTION ====== -->
-        <section id="core-agents-section">
-          <div class="title-text-centered text-center p-3">
-            <h1>Core y Agentes</h1>
+        <section id="info-section" class="pb-4">
+          <div id="core" class="col-lg-12 col-sm-12">
+            <div class="text-desc border border-dark">
+              <p class="h5 offset-lg-2 col-lg-8 col-sm-12">
+                ZoE se creó con un único objetivo en mente: Realizar las tareas que nadie quiere hacer. Con este objetivo en mente y la filosofía del software libre surge el asistente virtual del GUL UC3M. 
+              </p>
+              <p class="text-center">
+                Actualmente en su versión 2.0.
+              </p>
+              <div id="info-caracteristicas" class="row text-center">
+                <div class="col-lg-3 col-sm-6">
+                  <img src="static/images/icon/open-source.png" class="col-2"/>
+                  <!-- software libre -->
+                  <p class="">
+                    100% Software libre
+                  </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <!--<label>Escalable:</label>-->
+                  <img src="static/images/icon/escalable.png" class="col-2"/>
+                  <p class="">
+                    Escalable
+                  </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <!--<label>Agnóstico al lenguaje:</label>-->
+                  <img src="static/images/icon/idioma.png" class="col-2"/>
+                  <p class="">
+                    Agnóstico al lenguaje
+                  </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <!--<label>Fácilmente modificable:</label>-->
+                  <img src="static/images/icon/modificable.png" class="col-2"/>
+                  <p class="">
+                    Fácilmente modificable
+                  </p>
+                </div>
+              </div>
+              <p class="offset-lg-2 col-lg-8 col-sm-12 mt-2">
+                <b>Lector</b>: <i>Me ganaste con la parte de delegar tareas que no quiero hacer. ¿Cómo empiezo?</i><br>
+                <b>GUL</b>: <i>A continuación te contamos como.</i>
+              </p>
+            </div>
           </div>
-          <div class="row justify-content-center m-0 col-12 p-0">
-            <div id="core" class="program col-lg-5 col-sm-12">
+        </section>
+
+        <section id="que-es-section" class="row pt-4 align-items-center">
+            <div class="offset-lg-1 col-lg-5 col-sm-12">
               <div class="text-title text-center p-3 ">
                 <h3>Core</h3>
               </div>
@@ -151,32 +184,37 @@
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
                 </p>
-                <div class="row">
-                  <div class="overflow-hidden">
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-python.svg?fullname=&link_target=_blank"></object>
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-java.svg?fullname=&link_target=_blank"></object>
-                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="row">
+                <div class="overflow-hidden">
+                  <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-python.svg?fullname=&link_target=_blank"></object>
+                  <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-lib-java.svg?fullname=&link_target=_blank"></object>
                 </div>
               </div>
             </div>
+        </section>
 
-            <div id="agentes" class="program col-lg-5 col-sm-12 mt-sm-4 mt-lg-0">
-              <div class="text-title text-center p-3">
-                <h3>Agentes</h3>
-              </div>
-              <div class="text-desc border border-dark">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
-                </p>
-                <div class="row">
-                  <div class="overflow-hidden">
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-shell.svg?fullname=&link_target=_blank"></object>
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-msglog.svg?fullname=&link_target=_blank"></object>
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-mail.svg?fullname=&link_target=_blank"></object>
-                    <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-vidmaster.svg?fullname=&link_target=_blank"></object>
-                  </div>
-                </div>
-              </div>
+        <section id="agentes-section" class="row pt-4 align-items-center">
+          <div class="offset-lg-1 col-lg-5 col-sm-12">
+            <div class="text-title text-center p-3 ">
+              <h3>Agentes</h3>
+            </div>
+            <div class="text-desc border border-dark">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc enim, semper at enim sit amet, maximus sodales lorem. Morbi rutrum rutrum maximus. Integer et facilisis leo. Phasellus hendrerit sem in libero placerat, sed maximus lectus vulputate. Pellentesque posuere euismod condimentum. Ut ultricies quam ultricies sem sodales dignissim. Vestibulum tincidunt sapien vitae vehicula efficitur. Morbi blandit ligula vitae nisl varius, et tempus libero pharetra. Fusce ultricies maximus odio et gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut maximus nisl, at molestie tellus. Duis imperdiet ex ac elit molestie suscipit. Suspendisse pulvinar vel tellus vitae vestibulum. Phasellus tempus sapien ipsum, ullamcorper aliquam velit dignissim id. Sed porta interdum blandit. Ut nec laoreet sem.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 overflow-auto">
+            <div>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-shell.svg?fullname=&link_target=_blank"></object>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-msglog.svg?fullname=&link_target=_blank"></object>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-mail.svg?fullname=&link_target=_blank"></object>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-vidmaster.svg?fullname=&link_target=_blank"></object>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-vidmaster.svg?fullname=&link_target=_blank"></object>
+              <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-vidmaster.svg?fullname=&link_target=_blank"></object>
             </div>
           </div>
         </section>

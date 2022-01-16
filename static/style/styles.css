@@ -3,7 +3,7 @@ html {
 }
 * {
   box-sizing: border-box;
-}          
+}
 
 .no-style {
   text-decoration: inherit;
@@ -76,7 +76,7 @@ html {
 
 .text-centered-office {
   position: absolute;
-  top: 0;
+  top: 2vh;
   height: 100%;
   width: 100%;
   font-size: 2.4rem;
@@ -89,7 +89,7 @@ html {
 
 #main-title {
   position: relative;
-  top: 30%;
+  top: 25%;
 }
 
 #main-text {
@@ -130,10 +130,11 @@ html {
   background-repeat: no-repeat;
 }
 
-/* ======  CORE-AGENTS SECTION START ====== */
-#core-agents-section {
-  padding: 1rem;
+#info-caracteristicas {
+  padding: 0 2%;
 }
+
+/* ======  CORE-AGENTS SECTION START ====== */
 
 .title-text-centered{
   color: white;
