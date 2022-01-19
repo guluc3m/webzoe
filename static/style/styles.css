@@ -71,12 +71,12 @@ html {
   z-index: 4;
   filter: blur(2px);
   height: 100vh;
-  width: auto;  
+  width: auto;
 }
 
 .text-centered-office {
   position: absolute;
-  top: 2vh;
+  top: 0vh;
   height: 100%;
   width: 100%;
   font-size: 2.4rem;
@@ -88,13 +88,9 @@ html {
 }
 
 #main-title {
-  position: relative;
-  top: 25%;
 }
 
 #main-text {
-  position: relative;
-  top: 30%;
   margin: auto;
   max-width: 60%;
 
@@ -104,9 +100,7 @@ html {
 }
 
 #main-video {
-  position: relative;
   margin: auto;
-  top: 15%;
   text-align: center;
   padding: 1rem;
 }
@@ -123,12 +117,13 @@ html {
 /* <<<<<<  MAIN SECTION END >>>>>> */
 
 
-#body {
-  background-image: url("../images/background/gul_logo.svg");
+#que-es-section {
   background-color: #1c3144;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+
+#agentes-section {
+}
+
 
 #info-caracteristicas {
   padding: 0 2%;
@@ -175,6 +170,18 @@ html {
 }
 
 /* <<<<<<  PRIMEROS-PASOS SECTION END >>>>>> */
+
+footer {
+  background-image: url("../images/robot-attack.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 2%;
+  overflow: hidden;
+}
+
+footer div {
+  background-color: rgba(255, 255, 255, 0.18);
+}
 
 
 /* ======  MEDIA QUERY SECTION START ====== */
@@ -233,8 +240,9 @@ html {
     width: 90%;
   }
 
-  
-
+  footer {
+    background-size: cover;
+  }
 }
 
 /* <<<<<<  MEDIA QUERY SECTION END >>>>>> */
