@@ -118,10 +118,20 @@ html {
 
 
 #que-es-section {
-  background-color: #1c3144;
+}
+
+#que-es-section img {
+  height: 30vh;
+  transform: scaleX(-1);
+  width: -moz-available;
 }
 
 #agentes-section {
+}
+
+#agentes-section img {
+  height: 40vh;
+  width: -moz-available;
 }
 
 
@@ -187,6 +197,10 @@ footer div {
 /* ======  MEDIA QUERY SECTION START ====== */
 
 @media screen and (max-width: 992px) {
+  #agentes-section img {
+    height: 30vh;
+  }
+
   .text-container {
     width: 80%;
   }
