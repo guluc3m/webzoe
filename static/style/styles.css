@@ -151,12 +151,14 @@ html {
   background-color: rgb(0, 117, 176);
   color: white;
   text-shadow: 2px 1px 5px #000;
+  border-radius: 10px 10px 0 0;
 }
 
 .text-desc {
   text-align: justify;
   padding: 1rem;
   background-color: white;
+  border-radius: 0 0 10px 10px;
 }
 
 .tarjeta object{
