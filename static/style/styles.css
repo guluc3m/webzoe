@@ -87,9 +87,6 @@ html {
   background-color: rgba(54, 54, 54, 0.616);
 }
 
-#main-title {
-}
-
 #main-text {
   margin: auto;
   max-width: 60%;
@@ -116,17 +113,10 @@ html {
 
 /* <<<<<<  MAIN SECTION END >>>>>> */
 
-
-#que-es-section {
-}
-
 #que-es-section img {
   height: 30vh;
   transform: scaleX(-1);
   width: -moz-available;
-}
-
-#agentes-section {
 }
 
 #agentes-section img {
@@ -134,12 +124,15 @@ html {
   width: -moz-available;
 }
 
-
 #info-caracteristicas {
   padding: 0 2%;
 }
 
 /* ======  CORE-AGENTS SECTION START ====== */
+
+#core-agents-title{
+  padding: 2rem;
+}
 
 .title-text-centered{
   color: white;
@@ -161,13 +154,14 @@ html {
   border-radius: 0 0 10px 10px;
 }
 
-.tarjeta object{
+.tarjeta {
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
+  margin: 0.4rem;
   transition: all 0.5s ease;
   border-radius: 5px;
 }
-.tarjeta object:hover {
+.tarjeta:hover {
   box-shadow: -10px -10px rgb(57, 160, 26);
   transform: translate(10px,10px);
 }
@@ -178,7 +172,7 @@ html {
 /* ======  PRIMEROS-PASOS SECTION START ====== */
 
 #primeros-pasos-section {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* <<<<<<  PRIMEROS-PASOS SECTION END >>>>>> */
@@ -207,7 +201,7 @@ footer div {
     width: 80%;
   }
 
-  .tarjeta object{
+  .tarjeta{
     max-width: 90%;
   }
 
@@ -226,12 +220,12 @@ footer div {
     font-size: 1.7rem !important;
   }
   
-  .tarjeta object:hover{
+  .tarjeta:hover{
     transform: none;
     box-shadow: none;
   }
 
-  .tarjeta object{
+  .tarjeta{
     padding: 0.1rem;
     text-align: inherit;
   }
