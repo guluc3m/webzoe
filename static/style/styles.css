@@ -117,11 +117,13 @@ html {
   height: 30vh;
   transform: scaleX(-1);
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 #agentes-section img {
   height: 40vh;
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 #info-caracteristicas {
@@ -156,7 +158,6 @@ html {
 
 .tarjeta {
   text-align: center;
-  padding: 0.3rem;
   margin: 0.4rem;
   transition: all 0.5s ease;
   border-radius: 5px;
