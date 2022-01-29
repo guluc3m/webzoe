@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
 
-    <title>ZoE</title>
+    <title>GUL UC3M | ZoE</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- ====== SEO ====== -->
@@ -108,23 +108,21 @@
     <main>
       <section id="main-section">
         <div class="container-fluid image-main-section"></div>
-          <div class="text-centered-office d-flex align-items-center justify-content-center">
-            <div id="main-title" class="p-3">
-              <h1 class="mb-3">¿Qué es ZoE?</h1>
-              <div id="main-text">
-                <p>
-                  <b>ZoE</b> es el asistente virtual creado por el <b><a href="https://www.gul.es" target="_blank">
-                  Grupo de Usuarios Linux de la Universidad Carlos III de Madrid</a></b>.
-                </p>
-              </div>
-              <div id="main-video" class="col-lg-8 col-sm-10">
-                <div id="" class="ratio ratio-16x9">
-                  <iframe class="" src="https://www.youtube.com/embed/3ApdZpXHGns" title="Video sobre Zoe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="text-centered-office d-flex align-items-center justify-content-center">
+          <div id="main-title" class="p-3">
+            <h1 class="mb-3">¿Qué es ZoE?</h1>
+            <div id="main-text">
+              <p>
+                <b>ZoE</b> es el asistente virtual creado por el <b><a href="https://www.gul.es" target="_blank">
+                Grupo de Usuarios Linux de la Universidad Carlos III de Madrid</a></b>.
+              </p>
+            </div>
+            <div id="main-video" class="col-lg-8 col-sm-10">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/3ApdZpXHGns" title="Video sobre Zoe"></iframe>
               </div>
             </div>
           </div>
-            
         </div>
       </section>
       
@@ -132,41 +130,42 @@
       <section id="info-section" class="container pb-4">
         <div id="core" class="col-lg-12 col-sm-12">
           <div class="text-desc" id="core-agents-title">
-            <p class="h5 offset-lg-2 col-lg-8 col-sm-12">
-              ZoE se creó con un único objetivo en mente: Realizar las tareas que nadie quiere hacer.
-            </p>
-            <p class="h5 offset-lg-2 col-lg-8 col-sm-12">
+            <h5 class="offset-lg-2 col-lg-8 col-sm-12">
+              <p>ZoE se creó con un único objetivo en mente: Realizar las tareas que nadie quiere hacer.
+              </p>
+              <p>
               Con esta premisa en mente y la filosofía del software libre surge el asistente virtual del GUL UC3M. 
-            </p>
+              </p>
+            </h5>
             <p class="text-center">
               Actualmente está en su versión 2.0.
             </p>
             <div id="info-caracteristicas" class="row text-center">
               <div class="col-lg-3 col-6">
-                <img src="static/images/icon/open-source.png" class="col-2"/>
+                <img src="static/images/icon/open-source.png" class="col-2"/ alt="icono de código abierto">
                 <!-- software libre -->
-                <p class="">
+                <p>
                   100% Software libre
                 </p>
               </div>
               <div class="col-lg-3 col-6">
                 <!--<label>Escalable:</label>-->
-                <img src="static/images/icon/escalable.png" class="col-2"/>
-                <p class="">
+                <img src="static/images/icon/escalable.png" class="col-2"/ alt="icono de muchas personitas para representar escalabilidad">
+                <p>
                   Escalable
                 </p>
               </div>
               <div class="col-lg-3 col-6">
                 <!--<label>Agnóstico al lenguaje:</label>-->
-                <img src="static/images/icon/idioma.png" class="col-2"/>
-                <p class="">
+                <img src="static/images/icon/idioma.png" class="col-2" alt="icono de idiomas que representa agnóstico al lenguaje"/>
+                <p>
                   Agnóstico al lenguaje
                 </p>
               </div>
               <div class="col-lg-3 col-6">
                 <!--<label>Fácilmente modificable:</label>-->
-                <img src="static/images/icon/modificable.png" class="col-2"/>
-                <p class="">
+                <img src="static/images/icon/modificable.png" class="col-2" alt="icono de llave inglesa para representar que es modificable"/>
+                <p>
                   Fácilmente modificable
                 </p>
               </div>
@@ -241,7 +240,7 @@
           <div class="col-lg-10 col-12 text-center">
             <div class="text-desc pb-0">
               <p>
-                Empezar a utilizar ZoE es muy sencillo. Su funcionamiento se basa en el patrón <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern" target="_blank">Publicador/Suscriptor</a> y tiene <b>dos dependencias</b> para funcionar correctamente: <a href="https://kafka.apache.org/" target="_blank">Kafka</a> y <a href="https://zookeeper.apache.org/" target="_target">Zookeeper</a>.
+                Empezar a utilizar ZoE es muy sencillo. Su funcionamiento se basa en el patrón <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern" target="_blank">Publicador/Suscriptor</a> y tiene <b>dos dependencias</b> para funcionar correctamente: <a href="https://kafka.apache.org/" target="_blank">Kafka</a> y <a href="https://zookeeper.apache.org/" target="_blank">Zookeeper</a>.
               </p>
               <p>
                 En el repositorio que encontrarás en esta sección <a href="" target="_blank">zoe-docker</a>, encontrarás toda la información necesaria para desplegar ZoE por tu propia cuenta de dos formas totalmente distinta: 
@@ -268,10 +267,14 @@
         </div>
       </section>
 
-      <footer id="legal-section" class="">
+      <footer id="legal-section">
         <div class="text-center pt-4 pb-4 col-lg-8 offset-lg-2 col-md-6 offset-md-3">
-          <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</p>
-          <p>Domicilio social: Despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30, 28911 Leganés Madrid, España.</p>
+          <p>
+            El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.
+          </p>
+          <p>
+            Domicilio social: Despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30, 28911 Leganés Madrid, España.
+          </p>
           <p>
             C.I.F.: G83296988<br>
             Número de registro de la comunidad de Madrid: 23500<br>
