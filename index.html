@@ -14,7 +14,7 @@
     <meta property="og:description" content="ZoE, el asistente virtual de GUL UC3M"/>
     <meta property="og:locale" content="es_ES" />
     <!-- ====== FAVICON ====== -->
-    <link rel="icon" href="static/images/favicon.png"/>    
+    <link rel="icon" href="static/images/favicon.png"/>
     <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="static/style/styles.css"/>
     <!-- ====== FONTS ====== -->
@@ -40,7 +40,7 @@
             <!-- debería ser .svg, pero el degradado no funciona -->
             <img
               class="logo-nav"
-              src="static/images/zoe_logo_horizontal.png" 
+              src="static/images/zoe_logo_horizontal.png"
               alt="Logo ZoE Image"
             >
           </a>
@@ -50,16 +50,6 @@
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav nav-container-icon p-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
-                  <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
-                  <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/>
-                </a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://cursos.gul.es" title="Enlace a cursos.gul.es">
                   <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
@@ -89,13 +79,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#que-es-section">
+                <a class="nav-link" href="#info-caracteristicas">
                   Core y Agentes
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#instalacion-banner">
-                  Primeros pasos
+                <a class="nav-link" href="#ref-instalacion">
+                  Instalación
                 </a>
               </li>
             </ul>
@@ -210,7 +200,7 @@
                 ZoE, al igual que casi todos los asistentes virtuales funciona mediante agentes, o llámalo skills, o llámalo funciones, o llámalo extensiones.
               </p>
               <p>
-                Cada Agente sigue la filosofía de UNIX, por lo que debe realizar una única tarea y realizarla lo mejor posible. Esto quiere decir que los agentes que 
+                Cada Agente sigue la filosofía de UNIX, por lo que debe realizar una única tarea y realizarla lo mejor posible. Esto quiere decir que los agentes que
                 encontrarás aquí hacen lo que dicen hacer. "msglog" loguea los mensajes, "mail" manda correos electrónicos y "shell" proporciona una consola interactiva.
               </p>
             </div>
@@ -221,6 +211,7 @@
           <div class="col-10 text-center pt-4">
             <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-shell.svg?fullname=&link_target=_blank"></object>
             <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-msglog.svg?fullname=&link_target=_blank"></object>
+            <div id="ref-instalacion"></div>
             <object class="tarjeta" type="image/svg+xml" data="https://gh-card.dev/repos/guluc3m/zoe-agent-mail.svg?fullname=&link_target=_blank"></object>
           </div>
         </div>
@@ -271,7 +262,14 @@
       </section>
 
       <footer id="legal-section">
-        <div class="text-center pt-4 pb-4 col-lg-8 offset-lg-2 col-md-6 offset-md-3">
+        <div class="text-center pb-4 col-lg-8 offset-lg-2 col-md-6 offset-md-3">
+          <p>
+            <a target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
+                <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/></a> <!-- Está en la misma línea porque si no el HTML mete un espacio en blanco -->
+            <a target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
+              <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/>
+            </a>
+          </p>
           <p>
             El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.
           </p>
